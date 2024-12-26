@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Navbar CSS*/
+.navbar-color {
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+.navbar-font1 {
+    font-family: "Roboto";
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: black;
+}
+
+#navbar-font2 {
+    font-family: "Caveat";
+    color: black;
+}
+
+.navbar-toggler {
+    border-color: black;
+    border-width: 1px;
+}
+
+/*Home Page */
+#home {
+    font-family: 'Montserrat', 'Open Sans', Helvetica, sans-serif;
+    text-align: center;
+}
+
+.bg-section {
+    background: linear-gradient(rgba(0, 0, 50, 0.5),
+            rgba(0, 100, 255, 0.5)), url('https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+}
+
+.d-flex.flex-row {
+    justify-content: center;
+}
+
+.myname {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Icons*/
+
+body {
+    background: linear-gradient(rgba(0, 0, 50, 0.5),
+            rgba(0, 100, 255, 0.5)), url('https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg') no-repeat center center/cover;
+
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.social-menu ul li .fab {
+    font-size: 28px;
+    line-height: 55px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover {
+    color: #fff;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu ul li a:hover {
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #E4405F;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #0077b5;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #000;
+}
+
+/*About*/
+
+.about-background {
+    background: linear-gradient(to right, #29323c, #485563);
+    color: white;
+    padding: 5px;
+    margin: auto;
+}
+
+.who-am-I {
+    font-size: 36px;
+    margin: auto;
+}
+
+.about-me-para {
+    font-size: 18px;
+    margin: auto;
+    padding: 5px;
+}
+
+.about-border {
+    border-width: 3px;
+    border-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.myimage {
+    background-size: cover;
+    height: 180px;
+    width: 180px;
+    border-radius: 150px;
+}
+
+/*Skills*/
+.skills-heading {
+    color: white;
+    font-family: 'Montserrat', 'Open Sans', Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.card {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+}
+
+.logo-card {
+    background-color: white;
+    border-radius: 12px;
+    height: 100%;
+    color: black;
+    font-family: "Sans-Serif";
+
+}
+
+.logo-pic {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.logo-para {
+    font-size: 18px;
+    font-style: italic;
+
+}
+
+
+/*Project Page */
+.project-front-image {
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.bg {
+    background: linear-gradient(115deg, #2c3e50, #58b8c7);
+}
+
+.bg2 {
+    background-color: white;
+
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-caption {
+    font-size: 15px;
+    font-family: "Roboto";
+    font-style: italic;
+    padding: 5px;
+    color: black;
+    margin: 5px;
+}
+
+.project-para {
+    font-size: 16px;
+    font-family: "Sans-Serif";
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
+
+.project-heading {
+    font-size: 20px;
+    font-family: "Arial";
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.ab {
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+/*Achievements*/
+.achieve-images {
+    width: 100%;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achieve-images:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bg-achievements {
+    background-color: #00537f;
+}
+
+
+/*Contact*/
+.contact-bg1 {
+    background-color: white;
+}
+
+.contact-bg2 {
+    background: #89d2fc;
+}
+
+.contact-mainbg {
+    background: #89d2fc;
+}
+
+.contact-vector {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.contact-heading1 {
+    color: #89d2fc;
+    font-size: 35px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.contact-heading2 {
+    color: white;
+    font-size: 35px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.contact-para {
+    color: #89d2fc;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #00378f;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #0041C2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.container1 {
+    border-radius: 5px;
+    background-color: #89d2fc;
+    padding: 20px;
+}
+
+/*Icons*/
+body {
+    background-color: #89d2fc;
+}
+
+.social-menu-contact ul {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu-contact ul li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.social-menu-contact ul li .fab {
+    font-size: 25px;
+    line-height: 50px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu-contact ul li .fab:hover {
+    color: #fff;
+}
+
+.social-menu-contact ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu-contact ul li a:hover {
+    transform: translate(0, -10%);
+}
+
+.social-menu-contact ul li:nth-child(1) a:hover {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.social-menu-contact ul li:nth-child(2) a:hover {
+    background-color: #E4405F;
+}
+
+.social-menu-contact ul li:nth-child(3) a:hover {
+    background-color: #0077b5;
+}
+
+.social-menu-contact ul li:nth-child(4) a:hover {
+    background-color: #000;
+}
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f263305759.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-color  navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " id="navbar-font2" href="#">Chatur's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#sectionHome">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#sectionAbout">About</a>
+                    <a class="nav-link" href="#sectionSkills">Skills</a>
+                    <a class="nav-link" href="#sectionProjects">Projects</a>
+                    <a class="nav-link" href="#sectionAchievements">Achievements</a>
+                    <a class="nav-link" href="#sectioncontact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sectionHome" class="bg-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-row">
+                        <div class=" d-flex flex-column justify-content-center">
+                            <h1 class="myname">Hello I'm <br> Chaturvyuha Kankipati</h1>
+                            <h4>Full-Stack Developer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-menu p-3 ">
+        <ul>
+            <li><a href="https://github.com/Chaturvyuha" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/_chaturvyuha_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/Chaturvyuha/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://x.com/chaturvyuha" target="_blank"><i class="fab fa-x-twitter"></i></a></li> <!-- Updated to X logo -->
+        </ul>
+    </div>
+
+
+    <div id="sectionAbout" class=" about-background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 about-border">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h2 class="who-am-I">Who Am I?</h2>
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="https://i.postimg.cc/PJ3qWPJ9/Whats-App-Image-2024-10-31-at-21-29-11-4f442d6c.jpg" class="myimage" />
+                        </div>
+                        <p class="about-me-para">I am a passionate <strong>Front-End Developer</strong> in creating user-friendly websites. I love exploring new technologies and solving
+                            complex problems through coding and i am highly motivated and dedicated Entry-level Software Developer with a strong educational foundation in computer
+                            science and a passion for creating innovative software solutions. Possessing a solid understanding of Programming languages <strong>Python</strong> , as well as Web development
+                            technologies like<strong> HTML, CSS and Bootstrap </strong> and Backend Technologies like <strong> SQLite, MySQL </strong> . Demonstrated ability to quickly learn new technologies and programming concepts.
+                            Eager to contribute my skills and knowledge to drive technological advancements and deliver impactful solutions as an integral part of a dynamic software development team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionSkills" class="card shadow-lg">
+        <h1 class="skills-heading"><strong>My Skills</strong></h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-row">
+                        <div class="logo-card p-3 m-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://i.postimg.cc/yd3WPv0z/html-5.png" class="logo-pic " />
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h1 class="logo-text">HTML 5</h1>
+                                <p class="logo-para">Build the backbone of the web with HTML, structuring your content for the world to see and interact and it is a markup language.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-row">
+                        <div class="logo-card p-3 m-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://i.postimg.cc/vmyW0Py9/css-3-1.png" class="logo-pic" />
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h1 class="logo-text">CSS 3</h1>
+                                <p class="logo-para">Style your web pages with CSS, transforming basic structure into visually stunning designs with elegance and precision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-row">
+                        <div class="logo-card p-3 m-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://i.postimg.cc/zDw3jJBd/bootstrap.png" class="logo-pic " />
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h1 class="logo-text">Bootstrap</h1>
+                                <p class="logo-para">Create responsive, mobile-first websites effortlessly with Bootstrap’s pre-designed components and powerful grid system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-row">
+                        <div class="logo-card p-3 m-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://i.postimg.cc/4yRDFk8Z/python.png" class="logo-pic" />
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h1 class="logo-text">Python</h1>
+                                <p class="logo-para">Unlock limitless possibilities with Python, the versatile, user-friendly language that powers everything from web apps to AI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-row">
+                        <div class="logo-card p-3 m-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://i.postimg.cc/6Qk6wPHb/figma.png" class="logo-pic" />
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h1 class="logo-text">Figma</h1>
+                                <p class="logo-para">Collaborate on stunning designs with Figma, the cloud-based design tool revolutionizing UI/UX creation for teams everywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-row">
+                        <div class="logo-card p-3 m-3">
+                            <div class="d-flex flex-row justify-content-center">
+                                <img src="https://i.postimg.cc/HxB6fDZM/png-transparent-sqlite-relational-database-management-system-redis-square-icon-blue-logo-electric-bl.png" class="logo-pic" />
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <h1 class="logo-text">SQLite</h1>
+                                <p class="logo-para">Manage lightweight, serverless databases with SQLite, the compact, reliable database engine built into applications everywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionProjects" class="bg">
+        <h1 class="skills-heading"><strong>My Projects</strong></h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="container-fluid p-3 mb-3 ">
+                        <div class="project-card">
+                            <div>
+                                <img src="https://i.postimg.cc/13VkbT1w/photo-1702742322469-36315505728f.avif" class=" project-front-image" />
+                            </div>
+                            <p class="project-caption">Responsive Webpage</p>
+                            <h1 class="project-heading">
+                                Food Munch
+                            </h1>
+                            <p class="project-para">
+                                Food Munch is a user-friendly food ordering webpage showcasing a clean and engaging
+                                interface where users can explore a variety of menu options and place orders seamlessly.
+                            </p>
+                            <a href="https://chaturfoodmunch.ccbp.tech/" target="_blank" class="ab">Read More <i class="fa fa-arrow-right fa-xs" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="container-fluid p-3 mb-3">
+                        <div class="project-card ">
+                            <div>
+                                <img src="https://i.postimg.cc/SKcWSHfX/image.png" class=" project-front-image" />
+                            </div>
+                            <p class="project-caption">Static Webpage</p>
+                            <h1 class="project-heading">
+                                My Tourism
+                            </h1>
+                            <p class="project-para">
+                                This Tourism page shows the favourite places in Indonesia,featuring a dynamic layout
+                                with sections on famous attractions,it allows users to browse and learn more about
+                                each place.
+                            </p>
+                            <a href="https://chaturtravel.ccbp.tech/" target="_blank" class="ab">Read More <i class="fa fa-arrow-right fa-xs" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="container-fluid  p-3 mb-3 ">
+                        <div class="project-card ">
+                            <div>
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/podcasts-bg.png" class=" project-front-image" />
+                            </div>
+                            <p class="project-caption">Responsive Webpage</p>
+                            <h1 class="project-heading">
+                                Podcasts
+                            </h1>
+                            <p class="project-para">
+                                This Podcast page showcases a streamlined platform where users can watch famous podcasts,
+                                it provides a visually organized layout with sections for episode highlights and detailed
+                                descriptions. With a clean and modern design,
+                            </p>
+                            <a href="https://chaturvyuha.ccbp.tech/" target="_blank" class="ab">Read More <i class="fa fa-arrow-right fa-xs" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="container-fluid  p-3 ">
+                        <div class="project-card ">
+                            <div>
+                                <img src="https://i.postimg.cc/zGTm2Jvm/Screenshot-2024-10-29-113528.png" class=" project-front-image" />
+                            </div>
+                            <p class="project-caption">Webpage</p>
+                            <h1 class="project-heading">
+                                My Portfolio
+                            </h1>
+                            <p class="project-para">Discover the soul of India, from the timeless love of the Taj Mahal to the spiritual serenity of the Golden Temple, Varanasi's sacred ghats, and the royal grandeur of Mysore Palace. </p>
+                            <a href="https://chaturportfolio.ccbp.tech/" target="_blank" class="ab">Read More <i class="fa fa-arrow-right fa-xs" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-achievements shadow-lg" id="sectionAchievements">
+        <h1 class="skills-heading"><strong>My Achievements</strong></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 pt-3 pb-4">
+                    <a href="https://certificates.ccbp.in/academy/static-website?id=NOMELNNLQB" target="_blank">
+                        <img src="https://i.postimg.cc/FR4n5N96/NOMELNNLQB-page-0001.jpg" class="achieve-images" />
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 pt-3 pb-4">
+                    <a href="https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=UDGRADQAFA" target="_blank">
+                        <img src="https://i.postimg.cc/0QSxZ8VH/Responsive-Website-page-0001.jpg" class="achieve-images" />
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 pt-3 pb-4">
+                    <a href="https://certificates.ccbp.in/academy/introduction-to-databases?id=ZNTAJGJIVG" target="_blank">
+                        <img src="https://i.postimg.cc/HssRkYQD/Intro-to-database-page-0001.jpg" class="achieve-images" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectioncontact" class="contact-mainbg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="contact-bg1 ">
+                        <h1 class="contact-heading1 p-2 m-2">Lets Get in Touch</h1>
+                        <img src="https://i.postimg.cc/1537QyFg/rb-20567.png" class="contact-vector p-2 mb-2" />
+                        <p class="contact-para ml-2">Connect with us:</p>
+                        <div class="social-menu-contact ml-2 pb-5">
+                            <ul>
+                                <li><a href="https://github.com/Chaturvyuha" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://www.instagram.com/_chaturvyuha_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/Chaturvyuha/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://x.com/chaturvyuha" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="contact-bg2">
+                        <div class="container1">
+                            <h1 class="contact-heading2">Contact Us</h1>
+                            <form id="contactForm" onsubmit="handleSubmit(event)">
+                                <input type="text" id="fname" name="firstname" placeholder="First Name.." required>
+                                <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+                                <input type="email" id="femail" name="email" placeholder="Your Email.." required>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                            <p id="successMessage" style="color: white; display: none; margin-top: 10px;">Your form has been submitted successfully!</p>
+                            <p id="errorMessage" style="color: red; display: none; margin-top: 10px;">Please fill in all the fields.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // Get form values
+            const firstName = document.getElementById("fname").value.trim();
+            const lastName = document.getElementById("lname").value.trim();
+            const email = document.getElementById("femail").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+
+            // Check if all fields are filled
+            if (firstName && lastName && email && subject) {
+                // Hide error message if it was previously displayed
+                document.getElementById("errorMessage").style.display = "none";
+
+                // Show success message
+                document.getElementById("successMessage").style.display = "block";
+
+                // Optionally reset the form
+                document.getElementById("contactForm").reset();
+            } else {
+                // Hide success message if it was previously displayed
+                document.getElementById("successMessage").style.display = "none";
+
+                // Show error message
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
